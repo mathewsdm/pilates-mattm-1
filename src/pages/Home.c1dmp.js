@@ -1,3 +1,9 @@
+import { multiply } from 'backend/new-module.web';
+
+$w.onReady(async function () {
+   console.log(await multiply(4,5));
+});
+
 import { Permissions, webMethod } from "wix-web-module";
 
 export const multiply = webMethod(
